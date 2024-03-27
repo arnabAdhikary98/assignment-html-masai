@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Simple Layout</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .first-div{
+            display: flex;
+            flex-direction: column;
+        }
+        .first-div #masai-logo{
+            height: 13%;
+            width: 10%;
+        }
+        .first-div #baner-image{
+            height: 90%;
+            width: 50%;
+        }
+        #routine p{
+            font-size: 110%;
+            font-weight: 550;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 450px;
+        }
+        #form-main-div{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+
+        }
+        #form-text-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-align: center;
+            height: 100%;
+            width: 40%;
+        }
+        .form-text{
+            display: flex;
+            flex-direction: row;
+            height: 32%;
+            width: 100%;
+        }
+        #form-box-div{
+            height: 100%;
+            width: 60%;
+            margin: 2% 4% 2% 4%;
+            padding: 1%;
+        }
+        .form-box{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            height: 22%;
+            width: 100%;
+            padding: 1%;
+            margin: 1%;
+        }
+        #form p{
+            font-size: 110%;
+            font-weight: 550;
+        }
+        #bottom-info p{
+            font-size: 120%;
+            font-weight: 650;
+        }
+    </style>
+</head>
+<body>
+        <div class="first-div">
+            <img id="masai-logo" src="https://students.masaischool.com/static/media/masai-logo.e5c8801d4f26d2da036ec9e4b93cb202.svg" alt="masai-logo">
+            <img id="baner-image" src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_banner.jpg" alt="masai-banner">
+        </div>
+        <div id="routine">
+            <p>We will be learning the following things this week :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day1</th>
+                        <th>Day2</th>
+                        <th>Day3</th>
+                        <th>Day4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Linux 1</td>
+                        <td>HTML</td>
+                        <td>Linux 2</td>
+                        <td>Linux 3</td>
+                    </tr>
+                    <tr>
+                        <td>GIT 1</td>
+                        <td>CSS</td>
+                        <td>Git 2</td>
+                        <td>Bootstrap</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="form">
+            <p>If you want to contact me, please fill in this form:</p>
+            <div id="form-main-div">
+                <div class="form-text-div">
+                    <div class="form-text"><p>Name</p></div>
+                    <div class="form-text"><p>Phone no:</p></div>
+                    <div class="form-text"><p>email id:</p></div>
+                </div>
+                <div id="form-box-div">
+                    <div class="form-box"></div>
+                    <div class="form-box"></div>
+                    <div class="form-box"></div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-info">
+            <p>The following things are important to be a programmer</p>
+            <ul>
+                <li>A problem solving mindset</li>
+                <li>Consistency
+                    <ul>
+                        <li>Clean code</li> 
+                        <li>Through knowledge of core concepts</li>
+                        <li>Readable code</li>
+                    </ul>
+                <li>Speed</li>
+            </ul>
+        </div> 
+</body>
+</html>
