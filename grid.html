@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule using Grid</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: first baseline;
+            align-items: center;
+            text-align: center;
+            font-family: Open Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+        }
+        #routine{
+            display: grid;
+            height: 100%;
+            width: 90%;
+            grid-template-columns: repeat(6,3fr);
+            grid-template-rows: repeat(11,1fr);
+            gap: .5rem;
+        }
+        .box{
+            border : 1px solid red;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .bg-color{
+            background-color: rgb(255,214,239);
+        }
+        #box1-no-border{
+            border: none;
+            background-color:;
+        }
+        .days{
+            font-size: 120%;
+            font-weight: 600;
+        }
+        .time{
+            font-size: 120%;
+            font-weight: 600;
+        }
+        .note{
+            grid-column: 1/7;
+            grid-row: 12/-1;
+            justify-content: flex-start;
+            padding-left: 2%;
+            font-size: 120%;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="headeing">
+        <h1>Weekly Schedule</h1>
+    </div>
+    <div id="routine">
+        <div class="box" id="box1-no-border"></div>
+        <div class="box bg-color days" id="box2"><p>Monday</p></div>
+        <div class="box bg-color days" id="box3"><p>Tuesday</p></div>
+        <div class="box bg-color days" id="box4"><p>Wednesday</p></div>
+        <div class="box bg-color days" id="box5"><p>Thursday</p></div>
+        <div class="box bg-color days" id="box6"><p>Friday</p></div>
+        <div class="box bg-color time" id="box7"><p>08:00</p></div>
+        <div class="box bg-color" id="box8"></div>
+        <div class="box bg-color" id="box9"></div>
+        <div class="box bg-color" id="box10"></div>
+        <div class="box bg-color" id="box11"></div>
+        <div class="box bg-color" id="box12"></div>
+        <div class="box bg-color time" id="box13"><p>09:00</p></div>
+        <div class="box bg-color" id="box14"></div>
+        <div class="box bg-color" id="box15"></div>
+        <div class="box bg-color" id="box16"></div>
+        <div class="box bg-color" id="box17"></div>
+        <div class="box bg-color" id="box18"></div>
+        <div class="box bg-color time" id="box19"><p>10:00</p></div>
+        <div class="box bg-color" id="box20"></div>
+        <div class="box bg-color" id="box21"></div>
+        <div class="box bg-color" id="box22"></div>
+        <div class="box bg-color" id="box23"></div>
+        <div class="box bg-color" id="box24"></div>
+        <div class="box bg-color time" id="box25"><p>11:00</p></div>
+        <div class="box bg-color" id="box26"></div>
+        <div class="box bg-color" id="box27"></div>
+        <div class="box bg-color" id="box28"></div>
+        <div class="box bg-color" id="box29"></div>
+        <div class="box bg-color" id="box30"></div>
+        <div class="box bg-color time" id="box31"><p>12:00</p></div>
+        <div class="box bg-color" id="box32"></div>
+        <div class="box bg-color" id="box33"></div>
+        <div class="box bg-color" id="box34"></div>
+        <div class="box bg-color" id="box35"></div>
+        <div class="box bg-color" id="box36"></div>
+        <div class="box bg-color time" id="box37"><p>13:00</p></div>
+        <div class="box bg-color" id="box38"></div>
+        <div class="box bg-color" id="box39"></div>
+        <div class="box bg-color" id="box40"></div>
+        <div class="box bg-color" id="box41"></div>
+        <div class="box bg-color" id="box42"></div>
+        <div class="box bg-color time" id="box43"><p>14:00</p></div>
+        <div class="box bg-color" id="box44"></div>
+        <div class="box bg-color" id="box45"></div>
+        <div class="box bg-color" id="box46"></div>
+        <div class="box bg-color" id="box47"></div>
+        <div class="box bg-color" id="box48"></div>
+        <div class="box bg-color time" id="box49"><p>15:00</p></div>
+        <div class="box bg-color" id="box50"></div>
+        <div class="box bg-color" id="box51"></div>
+        <div class="box bg-color" id="box52"></div>
+        <div class="box bg-color" id="box53"></div>
+        <div class="box bg-color" id="box54"></div>
+        <div class="box bg-color time" id="box55"><p>16:00</p></div>
+        <div class="box bg-color" id="box56"></div>
+        <div class="box bg-color" id="box57"></div>
+        <div class="box bg-color" id="box58"></div>
+        <div class="box bg-color" id="box59"></div>
+        <div class="box bg-color" id="box60"></div>
+        <div class="box bg-color note" id="box61"><p>Note :</p></div>
+    </div> 
+</body>
+</html>
