@@ -6,3 +6,4 @@
 - Made a layout using flex properties using HTML & CSS.
 - Made a weekly schedule layout using HTML grid properties.
 - Made a demi responsive portfolio page with HTML and CSS.
+- Created a web page of Masai Investors, using grid property and media query with HTML and CSS
